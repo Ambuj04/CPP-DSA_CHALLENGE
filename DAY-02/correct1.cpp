@@ -32,9 +32,9 @@ public:
         }
         while (start <= end)
         {
-            //TC-> O(logn)
+            //TC-> O(log(sum of elements))
             int mid = start + (end - start) / 2;
-            if (helper(mid, arr, k))
+            if (helper(mid, arr, k)) ////TC-> O(n)
             {
                 // first occurance is our ans
                 ans = mid;
@@ -48,5 +48,5 @@ public:
         return ans;
     }
 };
-//TC -> O(n)
+// TC: O(n * log(S)), where S = sum of array
 //SC -> O(1)
