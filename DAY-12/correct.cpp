@@ -32,3 +32,5 @@ public:
         return res;
     }
 };
+//TC -> O(n × h) = O(n²)
+//SC -> O(n)
